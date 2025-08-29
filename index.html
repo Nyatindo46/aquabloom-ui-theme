@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-g" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquabloom | Pure by Nature, Bloom with Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* CSS variables mirroring design tokens */
+      :root {
+        --color-bg-primary: #F7FDF9; /* Aloe Mist White */
+        --color-primary-green: #6BBF59; /* Aloe Green */
+        --color-aqua-blue: #4DC4D6; /* Aqua Blue */
+        --color-sand-beige: #F7E9D7; /* Sand Beige */
+        --color-text-primary: #1E293B; /* Charcoal Navy */
+        --color-text-secondary: #64748B; /* Soft Gray Blue */
+      }
+      /* Apply body background and smooth scrolling */
+      body {
+        background-color: var(--color-bg-primary);
+        font-family: 'Montserrat', sans-serif;
+        color: var(--color-text-primary);
+        scroll-behavior: smooth;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'aloe-mist-white': '#F7FDF9',
+              'aloe-green': '#6BBF59',
+              'aqua-blue': '#4DC4D6',
+              'sand-beige': '#F7E9D7',
+              'charcoal-navy': '#1E293B',
+              'soft-gray-blue': '#64748B',
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+            },
+            borderRadius: {
+              'card': '20px',
+            },
+            boxShadow: {
+              'subtle': '0 4px 12px 0 rgba(0, 0, 0, 0.05)',
+              'card-hover': '0 8px 24px 0 rgba(0, 0, 0, 0.08)',
+            },
+            backgroundImage: {
+              'cta-gradient': 'linear-gradient(90deg, #6BBF59, #4DC4D6)',
+            },
+            transitionProperty: {
+              'transform-shadow': 'transform, box-shadow',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
